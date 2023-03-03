@@ -3,3 +3,6 @@
 #
 ro.carrier=wifi-only
 ro.sf.lcd_density=240
+
+# android GO
+ro.config.low_ram=true
