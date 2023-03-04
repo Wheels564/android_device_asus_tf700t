@@ -95,6 +95,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 # Build the kernel inline
 TARGET_KERNEL_SOURCE := kernel/asus/tegra3
 TARGET_KERNEL_CONFIG := omni_tf700t_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage
 KERNEL_TOOLCHAIN := "$(BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.7/bin/"
 
 # Allow overriding partition for boot image
@@ -105,7 +106,7 @@ BOARD_SEPOLICY_DIRS += \
     device/asus/tf700t/sepolicy
 
 # Dynamic memory allocation
-MALLOC_IMPL := dlmalloc
+MALLOC_SVELTE := true
 
 # Hardware tunables and properties
 BOARD_HARDWARE_CLASS := device/asus/tf700t/cmhw/
