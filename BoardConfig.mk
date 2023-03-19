@@ -24,7 +24,7 @@ USE_CAMERA_STUB := false
 # Inherit from the proprietary version
 -include vendor/asus/tf700t/BoardConfigVendor.mk
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+TARGET_DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Board naming
 TARGET_NO_RADIOIMAGE := true
